@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Columns Elements
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+While developing https://columns.ai, we end up making some good UI components based on React, MUI and other projects. We think other people/projects may like them and find value them. 
 
-## Available Scripts
+So we pick those common components into this repo and open it to all. Contributing back to the community.
+We look forward to your feedback and welcome any contributions.
 
-In the project directory, you can run:
+This repo is released under Apache License 2.0.
 
-### `npm start`
+### Run examples
+Current repo is an react app, run it by `yarn start` simply.
+The app is single page demoing all the components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Palette Maker
+While working with data visualizations, we would like to enable users to set their own palette to style thier graphs. So palette maker is the one we use to interact with users. 
+Check out this story example ( [LINK](https://columns.ai/story/c862e055-5d99-4239-83f7-efe84149a25e) ) to view how color was customized.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To use it
+```javascript
+// interpolate is the method to produce palette list with color values
+import { interpolate } from './components/common';
+import { PaletteMaker } from './components/PaletteMaker';
+<PaletteMaker onchange={(p) => interpolate(p.begin, p.end, p.steps)} />
+```
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## More to come...
+Reach out via Github issue or info@columns.ai
