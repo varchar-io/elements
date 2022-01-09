@@ -23,5 +23,7 @@ import { PaletteMaker } from './components/PaletteMaker';
 <PaletteMaker onchange={(p) => interpolate(p.begin, p.end, p.steps)} />
 ```
 
+![PaletteMaker Look](images/palette_maker.png)
+
 ## More to come...
 Reach out via Github issue or info@columns.ai
